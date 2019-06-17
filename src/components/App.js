@@ -19,9 +19,9 @@ class App extends React.Component {
 					<i className="flag nl" onClick={() => this.onLanguageChange('dutch')} />
 				</div>
 				<LanguageContext.Provider value={this.state.language}>
-					<ColorContext>
+					<ColorContext.Provider value="red">
 						<UserCreate />
-					</ColorContext>
+					</ColorContext.Provider>
 				</LanguageContext.Provider>
 			</div>
 		);
